@@ -27,9 +27,11 @@ const Tasks = () => {
 	function addNewTask(event) {
 		//busco la tarea que escribo para que no la añada si esta existe (con findIndex del useEffect)
 		//pregunto: si le han dado a ENTER y además no existe, entonces la añado
-		if (event.key === "Enter" && !taskExists) {
+		if (event.key === "Enter" && newTask != "" && !taskExists) {
 			setTasks([...tasks, newTask]); //esta es la sintaxis para añadir la nueva tarea en el array de tareas (SE CREA UNA COPIA DEL ARRAY,NO SE SOBREESCRIBE)
 			setNewTask(""); //dejo la casilla vacía despues de añadir la tarea
+			//	} else if (event.key === "Enter" && "") {
+			//		setTasks(...tasks);
 		}
 	}
 

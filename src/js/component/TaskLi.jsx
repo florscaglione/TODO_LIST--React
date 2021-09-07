@@ -19,7 +19,7 @@ const TaskLi = ({ task, taskExists, index, modifyTask, deleteTask }) => {
 				onClick={() => {
 					deleteTask(index); //le paso la posicion directamente a la fcion. de borrado
 				}}>
-				X
+				<i className="fas fa-trash-alt" />
 			</button>
 		</li>
 	);

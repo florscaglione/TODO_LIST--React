@@ -4,6 +4,7 @@
     padding-top: 20px;
     padding-right: 53px;
     .task{
+        list-style: none;
         .delete{
             display: none;
         }
@@ -19,9 +20,7 @@
     }
 }
 
-.task{
-    list-style: none;
-}
+
 
 input{
     width: 300px;
